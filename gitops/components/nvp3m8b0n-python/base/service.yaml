@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: nvp3m8b0n-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nvp3m8b0n-python 
+  name: nvp3m8b0n-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: nvp3m8b0n-python 
